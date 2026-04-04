@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StormShield — AI-Powered Parametric Insurance</title>
+
+  <!-- React -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body style="margin: 0; background: #080d14; font-family: sans-serif; color: white;">
+
+  <div id="root"></div>
+
+  <!-- ✅ LOAD YOUR APP FROM FASTAPI STATIC -->
+  <script type="text/babel" src="/static/StormShield.standalone.js"></script>
+
+  <!-- ✅ START REACT APP -->
+  <script type="text/babel">
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+  </script>
+
+</body>
+
+</html>
