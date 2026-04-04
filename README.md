@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# ⚡ StormShield AI — Workability-Based Income Protection for Gig Workers
-Guidewire DEVTrails 2026 · Phase 2 Submission  
+# ⚡ StormShield AI — Powered-Parametric- Income Protection  
 Team: Team Titans  
 
 ---
@@ -366,4 +364,3 @@ git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/stormshield.git
 git push -u origin main
 ```
->>>>>>> master
