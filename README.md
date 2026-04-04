@@ -1,7 +1,6 @@
-# ⚡ StormShield — AI-Powered Parametric Income Protection for Gig Workers
-
-Guidewire DEVTrails 2026 · Phase 1 Submission  
-Team: **Team Titans**
+# ⚡ StormShield AI — Workability-Based Income Protection for Gig Workers
+Guidewire DEVTrails 2026 · Phase 2 Submission  
+Team: Team Titans  
 
 ---
 
@@ -9,41 +8,98 @@ Team: **Team Titans**
 
 India has over 15 million gig delivery workers (Zomato, Swiggy, Blinkit, Amazon Flex). Their income is highly dependent on external conditions like weather, pollution, and local disruptions.
 
-A single cyclone or flood can wipe out ₹1,000–₹2,000 of weekly income — with **zero financial protection**.
+A single cyclone or flood can wipe out ₹1,000–₹2,000 of weekly income — with zero financial protection.
 
 Existing insurance systems fail because:
-- They require manual claims ❌  
-- They are slow ❌  
-- They are not designed for gig-based income ❌  
+
+- Manual claims required ❌  
+- Slow processing ❌  
+- Not designed for gig-based dynamic income ❌  
 
 ---
 
-## 💡 Our Solution
+## 💡 Our Core Idea (What Makes Us Different)
 
-**StormShield** is an AI-powered parametric insurance platform that provides **instant payouts** to gig workers when real-world disruptions occur.
+Most parametric insurance systems trigger payouts based on **events** (rain, heat, pollution).
 
-Instead of manual claims, payouts are triggered automatically based on:
-- Weather conditions  
-- AQI levels  
-- Flood data  
-- Platform outages  
+👉 We take a fundamentally different approach.
 
-⚡ Fast  
-⚡ Automatic  
-⚡ Fraud-resistant  
+### 🚀 We insure "Ability to Work" — not just events.
+
+We introduce:
+
+## 🧠 Workability Score (0–100)
+
+Instead of reacting to disruptions, we quantify how much a worker can actually work under real-world conditions.
+
+### Example:
+
+- Heavy rain + high AQI + heat → Workability = 32/100  
+- Normal conditions → Workability = 85–100  
+
+---
+
+## 💰 Income Protection Logic
+
+We move from event-based insurance → outcome-based protection
+
+Expected Income (Normal Conditions): ₹800  
+Actual Income (Low Workability): ₹250  
+
+Loss = ₹550 → Auto Payout Triggered  
+
+👉 Claim is triggered when:
+
+Workability Score < Threshold (e.g., 40)
 
 ---
 
 ## 🔁 System Workflow
 
-User Device → Data Collection → Disruption Detection → Fraud Detection → Risk Scoring → Decision Engine → Payout
+User → Data Collection → Workability Engine → Income Prediction → Fraud Detection → Decision Engine → Instant Payout  
 
 ### Breakdown:
-- **Data Collection:** GPS, device sensors, network signals  
-- **Disruption Detection:** Weather + AQI APIs  
-- **Fraud Detection:** Multi-signal validation  
-- **Risk Scoring:** Assigns fraud probability  
-- **Decision Engine:** Approve / Verify / Hold  
+
+- Data Collection: Weather, AQI, location  
+- Workability Engine: Converts real-world conditions → score  
+- Income Model: Predicts expected vs actual earnings  
+- Fraud Detection: Multi-signal validation  
+- Decision Engine: Auto payout / verify  
+
+---
+
+## 🌦️ Workability Computation
+
+We compute workability using:
+
+- Rainfall  
+- Temperature  
+- AQI  
+
+Example logic:
+
+- High rain reduces mobility  
+- Extreme heat reduces working hours  
+- High AQI reduces outdoor activity  
+
+Final Output:
+
+Workability Score: 0–100  
+
+---
+
+## ⚡ Parametric Triggers (Reframed)
+
+Instead of directly triggering on events:
+
+| Condition | Effect |
+|----------|--------|
+| Rain > 30mm | Workability drops |
+| Temp > 44°C | Workability drops |
+| AQI > 200 | Workability drops |
+| Flood | Workability near zero |
+
+👉 Final trigger = Low Workability
 
 ---
 
@@ -51,119 +107,110 @@ User Device → Data Collection → Disruption Detection → Fraud Detection →
 
 | Plan | Premium | Max Payout | Coverage |
 |------|--------|-----------|----------|
-| Basic | ₹29 | ₹1,500 | Rain |
-| Standard | ₹59 | ₹3,000 | Rain + AQI |
-| Premium | ₹99 | ₹6,000 | All triggers |
+| Basic | ₹29 | ₹1,500 | Low Workability Events |
+| Standard | ₹59 | ₹3,000 | Multi-factor disruptions |
+| Premium | ₹99 | ₹6,000 | Full adaptive coverage |
 
-Premiums are deducted weekly via UPI autopay.
-
----
-
-## 🌦️ Parametric Triggers
-
-| Trigger | Condition |
-|--------|----------|
-| Heavy Rain | >30mm in 3 hours |
-| Flood | Water level > 0.5m |
-| Heat | >44°C |
-| AQI | >200 |
-| Platform Outage | >2 hours |
+Premiums are dynamically adjusted using AI.
 
 ---
 
 ## 🤖 AI/ML Integration
 
-- **Dynamic Pricing Model (XGBoost):** Personalized premiums  
-- **Fraud Detection (Isolation Forest):** Detect anomalies  
-- **Risk Forecasting (Time Series):** Predict disruptions  
-- **Behavior Analysis:** Understand user patterns  
+- Workability Model: Converts environment → work capacity  
+- Income Predictor: Estimates earnings drop  
+- Dynamic Pricing (XGBoost): Personalized premiums  
+- Fraud Detection (Isolation Forest): Detect anomalies  
+- Risk Forecasting: Predict disruptions  
 
 ---
 
-## 🛡️ Adversarial Defense & Anti-Spoofing Strategy
+## 🛡️ Intelligent Fraud Detection
 
-### 🔍 Differentiation (Real vs Fake)
+We treat fraud as a multi-signal inconsistency problem.
 
-We treat fraud detection as a **multi-signal consistency problem**.
+### Real Worker Signals:
+- Irregular GPS movement  
+- Network fluctuations  
+- Behavioral consistency  
 
-A real worker shows:
-- Irregular movement  
-- Network instability  
-- Real-world disruption patterns  
-
-A spoofed user shows:
-- Static or smooth GPS  
-- No physical movement  
-- Data inconsistencies  
+### Suspicious Patterns:
+- Static GPS  
+- No movement  
+- Repeated identical claims  
 
 ---
 
-### 📊 Multi-Signal Validation
+## 📊 Multi-Signal Validation
 
 We validate claims using:
 
-- **IMU Sensors:** Detect real movement  
-- **Cell Tower Data:** Cross-check location  
-- **Network Signals:** Latency + signal drops  
-- **App Usage:** Active vs background behavior  
-- **Behavior History:** Past activity patterns  
+- GPS patterns  
+- Network signals  
+- App activity  
+- Behavioral history  
 
 ---
 
-### ⚡ Risk Scoring System
+## ⚡ Risk Scoring System
 
-Each claim is scored (0–100):
+Each claim gets a risk score:
 
 - 0–35 → Instant payout  
 - 36–70 → Light verification  
-- 71–100 → Flagged for review  
+- 71–100 → Flagged  
 
-We also maintain a **trust score** per user to reward genuine workers.
+We maintain a trust score per worker.
 
 ---
 
-### 🧠 Fraud Ring Detection
+## 🧠 Fraud Ring Detection
 
 We detect coordinated attacks using:
 
 - Claim timing clusters  
-- Similar device/network signatures  
-- Unusual group behavior  
-
-This prevents large-scale fraud attacks.
+- Device/network similarity  
+- Behavioral patterns  
 
 ---
 
-### ⚖️ UX Balance
-
-We use **progressive verification**:
+## ⚖️ Smart UX Design
 
 - Low risk → Instant payout  
-- Medium risk → OTP / quick check  
-- High risk → Delayed review  
+- Medium risk → Quick verification  
+- High risk → Review  
 
-👉 No harsh penalties for genuine users  
-👉 Security without friction  
+No friction for genuine users. Strong protection against fraud.
 
 ---
 
 ## 🧱 Tech Stack
 
-- Frontend: React.js  
-- Backend: Node.js / FastAPI  
+- Frontend: React / Streamlit  
+- Backend: FastAPI  
 - Database: PostgreSQL  
-- AI/ML: PyTorch, Scikit-learn  
+- ML: Scikit-learn, XGBoost  
 - APIs: Weather, AQI  
-- Hosting: Vercel / Railway  
+- Payments: Razorpay (Test Mode)  
+
+---
+
+## 🚀 What Makes StormShield Unique
+
+- Workability-based insurance (not event-based)  
+- Personalized income protection  
+- Outcome-driven payouts  
+- Strong fraud resistance  
+- Real-world behavioral modeling  
 
 ---
 
 ## 🚀 Future Scope
 
-- Real-time fraud clustering  
-- Edge AI validation on device  
-- Telecom-level location verification  
-- Advanced deep learning models  
+- Real-time workability prediction  
+- Edge AI fraud detection  
+- Telecom-level verification  
+- Deep learning-based models  
 
 ---
 
@@ -180,10 +227,13 @@ We use **progressive verification**:
 ## 📎 Demo & Repository
 
 GitHub: https://github.com/Sanjay-krishna-C/stormsafe-insurance  
-Demo: (Link provided in submission)
+Demo: (Add your demo link here)  
 
 ---
 
 ## 🧠 Final Note
 
-StormShield is designed to be **fast, fair, and fraud-resistant**, ensuring gig workers receive the financial protection they deserve — even in adversarial conditions.
+StormShield shifts from event-based insurance to outcome-based protection.
+
+We don’t just detect disruptions.  
+We measure how they impact a worker’s ability to earn — and insure that.
